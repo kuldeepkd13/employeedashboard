@@ -12,7 +12,7 @@ app.use(cors())
 require("dotenv").config()
 
 app.get("/",(req,res)=>{
-    res.send("Employee")
+    res.status(200).send({"msg":"Employee"})
 })
 
 
